@@ -1,0 +1,18 @@
+{
+	"name": "modren-web",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "wtr test/**/*.test.* --node-resolve",
+		"test:watch": "wtr test/**/*.test.* --node-resolve --watch"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@esm-bundle/chai": "^4.3.4-fix.0",
+		"@open-wc/testing": "^4.0.0",
+		"@web/test-runner": "^0.18.1",
+		"@web/test-runner-mocha": "^0.9.0"
+	}
+}
