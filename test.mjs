@@ -10,16 +10,16 @@ import setupHC from "/setupHC.mjs";
 try {
 	sessionStarted();
 
-    setupHC(Highcharts)
+	setupHC(Highcharts);
 
 	if (window.QUnit) {
 		setupQUnit(QUnit);
 
 		const testDetails = await new Promise((resolve) => {
 			QUnit.on("runEnd", (details) => {
-                if (details.status !== "passed") {
-                    console.log(details);
-                }
+				if (details.status !== "passed") {
+					console.log(details);
+				}
 
 				resolve(details);
 			});
@@ -35,7 +35,7 @@ try {
 					passed: test.status === "passed",
 					skipped: test.status === "skipped",
 					error: test.errors.join(", "),
-                    duration: test.runtime
+					duration: test.runtime,
 				})),
 			},
 		});
